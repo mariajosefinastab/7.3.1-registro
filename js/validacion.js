@@ -36,16 +36,14 @@ function verificarFormulario () {
         return false;
     }
 
-  
-    showAlertSuccess();
-    return true; 
-
-
-
     if (password1.lenght < 6 ){
         alert('La contraseña debe tener al menos 6 caracteres.');
         showAlertError();
+        return false;
     }
     
+  
+    showAlertSuccess();
+    return true; 
 
 }
